@@ -1,0 +1,111 @@
+<!-- TO DO -->
+<!-- https://www.w3schools.com/howto/howto_js_popup.asp - figure out how to do pop-up login page -->
+
+
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Displayed on tab in browser -->
+		<title>New Page</title>
+
+		<!-- Link to css stylesheet -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!-- imports font families -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Slab&display=swap');
+		</style>
+
+		<script type="text/javascript" src="password.js"></script>
+
+	</head>
+
+	<body>
+
+		<!-- Header -->
+		<div class="header">
+			<h1>Fjords</h1>
+			<p>Nature's great creation.</p>
+		</div>
+
+		<!-- Navigation Bar -->
+		<div class="navbar">
+			<a href="index.html">Home</a>
+			<a href="#">About Us</a>
+			<a href="#">Contact</a>
+			<div class="login">
+  				<a href="#" onClick="document.getElementById('id01').style.display='block'">Customer Login</a>
+			</div>
+	        <!-- container for the Login page -->
+	        <div id="id01" class="modal">
+	  
+	          <form class="modal-content animate" method="post">
+	            <div class="imgcontainer">
+	              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	              <img src="logo.png" alt="Virginia College Logo" class="avatar">
+	            </div>
+
+	 
+
+	            <div class="container">
+	              <label for="uname"><b>Username</b></label>
+	              <input type="text" placeholder="Enter Username" id="uname" required>
+
+	 
+
+	              <label for="psw"><b>Password</b></label>
+	              <input type="password" placeholder="Enter Password" id="pass" required>
+	                
+	              <button onclick="myLogin()">Login</button>
+	              <label>
+	                <input type="checkbox" checked="checked" name="remember"> Remember me
+	              </label>
+	            </div>
+
+	 
+
+	            <p id="demo"></p>
+
+	 
+
+	            <div class="container" style="background-color:#f1f1f1">
+	              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	              <button type="button" onclick="" class="psw">Forgot password?</button>
+	            </div>
+	          </form>
+	        </div>			
+		</div>
+
+		<div class="fjordphoto">
+			<img src="https://images5.alphacoders.com/569/thumb-1920-569815.jpg" alt="Great Fjord">
+		</div>
+		
+		<div class="whyfjord">
+			<h2>Why Fjords?</h2>
+			<p>Fjords are famously known for their fantastic geographical properties. Glaciers from thousands of years ago have carved out these beautiful valleys. </p>
+		</div>
+
+		<hr>
+
+		<div class="jokes">
+			<h2>Fjord-themed Jokes</h2>
+			<p>What's a scandanavian's favourite type of car?</p>
+			<div class = "punchline">
+				<p>A Fjord Focus!</p>
+			</div>
+		</div>
+
+
+		<!-- Footer -->
+		<div class="footer">
+			<h1>Fjords</h1>
+
+			<p>This may be the end, but fjords will continue on...</p>
+		</div>
+
+	</body>
+</html>

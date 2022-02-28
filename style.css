@@ -1,0 +1,296 @@
+
+
+/* Style the Header */
+.header{
+	padding:  80px;
+	text-align: center;
+	background-color: #30b589;
+	color: white;
+}
+
+.footer{
+	padding:  20px;
+	text-align: center;
+	background-color: #30b589;
+	color: white;
+}
+
+.footer h1{
+	font-family: 'Righteous';
+}
+
+/* Style the H1 element in my header */
+.header h1{
+	font-size: 40px;
+	font-family: 'Righteous';
+}
+
+/*Style the navigation bar*/
+.navbar{
+	background-color: #afe9d5;
+	overflow: hidden;
+	padding: 5px;
+}
+
+.login{
+	float: right;
+}
+
+
+.navbar a{
+	float: left;
+	display: block;
+	border-radius: 25px;
+	color: #1b654c;
+	text-decoration: none;
+	padding: 10px 15px;
+	text-align: center;
+}
+
+
+
+/*styles the hover on navbar*/
+.navbar a:hover{
+	background-color: #d7f4ea;
+}
+
+
+
+
+/* removes border around webpage */
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto Slab', serif;
+}
+
+
+/* targets table headers */
+.table th{
+	background-color: #30b589;
+	color: white;
+	padding: 4px;
+	border: 2px solid #afe9d5;
+}
+
+/* targets table data */
+.table td{
+	border: 2px solid #afe9d5;
+	padding: 8px;
+}
+
+
+/* targets table rows when hovered */
+.table tr:hover{
+	background-color: #d7f4ea;
+}
+
+/* targets the table class with any elements with the ID "numbers" */
+.table #numbers{
+	text-align: center;
+}
+
+/*adds padding to divs except exluded ones */
+div:not([class="header"]):not([class="footer"]):not([class="navbar"]):not([class="login"]):not([class="modal"]){
+	margin: 8px;
+}
+
+
+
+/*              Style for Login Button & Page               */
+
+ 
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-family: 'Roboto Slab', serif;
+}
+
+ 
+
+/* Set a style for login buttons */
+button {
+  background-color: #30b589;
+  font-family: 'Roboto Slab', serif;
+  border-radius: 25px;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+ 
+
+button:hover {
+  opacity: 0.8;
+}
+
+ 
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #FF6B6B;
+  border-radius: 25px;
+}
+
+ 
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+ 
+
+img.avatar {
+  width: 20%;
+  height: 20%;
+}
+
+ 
+
+.container {
+  padding: 8px;
+  border-radius: 25px;
+}
+
+ 
+.psw {
+	float: right;
+  width: auto;
+  padding: 10px 18px;
+  background-color: #30b589;
+  color: white;
+  border-radius: 25px;
+}
+
+/*span.psw {
+  float: right;
+  padding-top: 16px;
+
+  float: right;
+  width: auto;
+  padding: 10px 18px;
+  background-color: white;
+  color: white;
+  border-radius: 25px;
+}*/
+
+ 
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+ 
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+  border-radius: 25px;
+}
+
+ 
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+ 
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+ 
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+ 
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+ 
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+/*
+
+	Style for special fjord page
+
+*/
+
+.fjordphoto img{
+	display: block;
+	border-radius: 25px;
+	border: 10px solid #AFE9D5;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.punchline p{
+	display: block;	
+}
+
+.punchline:hover {
+  display: block;
+  color: red;
+}

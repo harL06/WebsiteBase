@@ -1,0 +1,169 @@
+<!-- TO DO -->
+<!-- https://www.w3schools.com/howto/howto_js_popup.asp - figure out how to do pop-up login page -->
+<!-- https://coolors.co/30b589-afe9d5-1b654c-ffffff-ff6b6b 			 colour pallet -->
+
+
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Displayed on tab in browser -->
+		<title>Report</title>
+
+		<!-- Link to css stylesheet -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!-- imports font families -->
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Slab&display=swap');
+		</style>
+
+		<script type="text/javascript" src="password.js"></script>
+
+	</head>
+
+	<body>
+
+		<!-- Header -->
+		<div class="header">
+			<h1>Header</h1>
+			<p>This is the header</p>
+		</div>
+
+		<!-- Navigation Bar -->
+		<div class="navbar">
+			<a href="index.html">Home</a>
+			<a href="#">About Us</a>
+			<a href="#">Contact</a>
+			<div class="login">
+  				<a href="#" onClick="document.getElementById('id01').style.display='block'">Customer Login</a>
+			</div>
+	        <!-- container for the Login page -->
+	        <div id="id01" class="modal">
+	  
+	          <form class="modal-content animate" method="post">
+	            <!-- <div class="imgcontainer">
+	              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	              <img src="logo.png" alt="Virginia College Logo" class="avatar">
+	            </div> -->
+
+	 
+
+	            <div class="container">
+	              <label for="uname"><b>Username</b></label>
+	              <input type="text" placeholder="Enter Username" id="uname" required>
+
+	 
+
+	              <label for="psw"><b>Password</b></label>
+	              <input type="password" placeholder="Enter Password" id="pass" required>
+	                
+	              <button onclick="myLogin()">Login</button>
+	              <label>
+	                <input type="checkbox" checked="checked" name="remember"> Remember me
+	              </label>
+	            </div>
+
+	 
+
+	            <p id="demo"></p>
+
+	 
+
+	            <div class="container" style="background-color:#f1f1f1">
+	              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	              <button type="button" onclick="" class="psw">Forgot password?</button>
+	              <!-- <span class="psw"><a href="#">Forgot password?</a></span> -->
+	            </div>
+	          </form>
+	        </div>
+
+
+
+
+			
+		</div>
+
+		<!-- Investigation and Planning -->
+		<div class="investigation">
+			<h2>Investigation & Planning</h2>
+			<p id="demo"></p>
+			<p>This is where I will type all of my research and investigation</p>
+			<hr>
+		</div>
+
+		<!-- Design -->
+		<div class="design">
+			<h2>Design</h2>
+			<p>This is where I will type all of my design</p>
+			<hr>
+		</div>
+
+		<!-- Implementation and Testing -->
+		<div class="implementation">
+			<h2>Implementation and Testing</h2>
+			<p>This is where I will type all of my testing</p>
+			<hr>
+		</div>
+
+		<!-- Evaluation -->
+		<div class="evaluation">
+			<h2>Evaluation</h2>
+			<p>This is where I will type all of my evaluation</p>
+			<hr>
+		</div>
+
+		<!-- References -->
+		<div class="references">
+			<h2>References</h2>
+			<p>This is where I will type all of my references</p>
+			<hr>
+		</div>
+
+		<!-- Summary Word Count -->
+		<div class="word">
+			<h2>Summary Word Count</h2>
+			<p>This is where I will type all of my summary word count</p>
+		</div>
+		<div class="table">
+			<table>
+				<tr>
+					<th>Section</th>
+					<th>No. of Words</th>
+				</tr>
+				<tr>
+					<td>Investigation & Planning</td>
+					<td id="numbers">100</td>
+				</tr>
+				</tr>
+				<tr>
+					<td>Design</td>
+					<td id="numbers">90</td>
+				</tr>
+				</tr>
+				<tr>
+					<td>Implementation & Testing</td>
+					<td id="numbers">119</td>
+				</tr>
+				<tr>
+					<td>Evaluation</td>
+					<td id="numbers">120</td>
+				</tr>
+				<tr>
+					<td>References</td>
+					<td id="numbers">115</td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- Footer -->
+		<div class="footer">
+			<h1>Footer</h1>
+			<p>This is the footer</p>
+		</div>
+
+	</body>
+</html>
